@@ -1,10 +1,10 @@
 import React from 'react';
 import ItemComponent from './ItemComponent';
 
-export default function ListComponent(){
+export default function ListComponent(props){
     return (
         <div>
-            <h2>My List</h2>
+            <h2> { props.listName } </h2>
             <ul>
                 <ItemComponent name={'My item'}/>
                 <ItemComponent name={'My item 2'}/>
